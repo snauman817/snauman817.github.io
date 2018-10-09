@@ -1,0 +1,41 @@
+body {
+  background-color: #FFE3C0;
+}
+
+nav {
+  align-items: flex-end;
+  background-color: #14d072;
+  display: flex;
+  height: 150px;
+  justify-content: flex-end;
+  left: 0;
+  position: absolute;
+  top: 20px;
+  width: 75%;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+nav a:hover {
+  color: lightgray;
+}
+
+.triangle-end {
+  position: absolute;
+  left: 75%;
+  top: 20px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid transparent;
+  /* adjust border-left for overall width */
+  border-left: 150px solid #14d072;
+}
