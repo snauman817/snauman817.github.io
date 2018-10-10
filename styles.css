@@ -1,5 +1,6 @@
 body {
   background-color: #FFE3C0;
+  font-family: monospace;
 }
 
 nav {
@@ -10,7 +11,6 @@ nav {
   justify-content: flex-end;
   left: 0;
   position: absolute;
-  top: 20px;
   width: 75%;
 }
 
@@ -19,23 +19,59 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 30px;
-  margin-left: 30px;
+  margin-left: 40px;
   margin-bottom: 10px;
-  font-family: monospace;
+  transition: 0.2s
 }
 
 nav a:hover {
   color: lightgray;
 }
 
-.triangle-end {
+.navdiv {
+  position: relative;
+  height: 200px;
+  margin-left: -8px;
+  margin-top: 10px;
+}
+
+.navdiv div {
   position: absolute;
   left: 75%;
-  top: 20px;
   display: inline-block;
   width: 0;
   height: 0;
   border-bottom: 150px solid transparent;
   /* adjust border-left for overall width */
   border-left: 150px solid #14d072;
+}
+
+header {
+  align-items: center;
+  background-color: brown;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  transition: 0.2s;
+  width: 70%;
+}
+
+header img {
+    display: inline-block;
+    width: 25%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.headertext {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 59%;
+}
+
+header:hover {
+  box-shadow: 5px 5px 5px rgb(89, 89, 89);
+  width: 71%;
 }
