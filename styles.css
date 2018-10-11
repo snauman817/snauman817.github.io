@@ -1,14 +1,18 @@
 html {
   overflow-x: hidden;
+  position: relative;
 }
+
 body {
-  background-color: #FFE3C0;
+  background-color: #f5f5f5;
+  background-image: url(../Downloads/folk-pattern/folk-pattern.png);
+  background-size: 150px;
   font-family: monospace;
 }
 
 nav {
   align-items: flex-end;
-  background-color: #14d072;
+  background-color: #fc5185;
   display: flex;
   height: 150px;
   justify-content: flex-end;
@@ -24,7 +28,7 @@ nav a {
   font-size: 30px;
   margin-left: 40px;
   margin-bottom: 10px;
-  transition: 0.2s
+  transition: 0.5s
 }
 
 nav a:hover {
@@ -47,18 +51,20 @@ header div {
   height: 0;
   border-bottom: 150px solid transparent;
   /* adjust border-left for overall width */
-  border-left: 150px solid #14d072;
+  border-left: 150px solid #fc5185;
 }
 
 section {
   align-items: center;
-  background-color: brown;
+  background-color: #3fc1c9;
+  border-radius: 5px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding: 5px;
-  transition: 0.2s;
+  padding: 15px 5px;
+  transition: 0.5s;
   width: 80%;
+  color: #f5f5f5;
 }
 
 section img {
@@ -75,6 +81,14 @@ section img {
   width: 59%;
 }
 
+.aboutmetext h1 {
+  font-size: 25px;
+}
+
+.aboutmetext p, .aboutmetext a {
+  font-size: 15px;
+}
+
 section:hover {
   box-shadow: 5px 5px 5px rgb(89, 89, 89);
   width: 81%;
@@ -86,7 +100,8 @@ main {
 }
 
 main a {
-  background-color: gray;
+  background-color: #364f6b;
+  color: #f5f5f5;
   display:flex;
   align-items: center;
   float: right;
@@ -100,9 +115,10 @@ main a {
 
 main a img {
   float: left;
-  height: 100%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 main a:hover {
@@ -110,9 +126,18 @@ main a:hover {
   box-shadow: 5px 5px 5px rgb(89, 89, 89);
 }
 
+main a:hover img {
+  opacity: 1.0;
+}
+
 .articletext {
+  opacity: 0.7;
   display: inline-block;
   width: 75%;
   margin-left: 40px;
   margin-right: 30px;
+  transition: 0.5s;
+}
+main a:hover .articletext {
+  opacity: 1;
 }
