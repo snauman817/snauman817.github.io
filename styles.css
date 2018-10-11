@@ -54,7 +54,7 @@ header div {
   border-left: 150px solid #fc5185;
 }
 
-section {
+.homebody section {
   align-items: center;
   background-color: #3fc1c9;
   border-radius: 5px;
@@ -67,7 +67,7 @@ section {
   color: #f5f5f5;
 }
 
-section img {
+.homebody section img {
   display: inline-block;
   width: 25%;
   margin-left: 2.5%;
@@ -89,20 +89,20 @@ section img {
   font-size: 15px;
 }
 
-section:hover {
+.homebody section:hover {
   box-shadow: 5px 5px 5px rgb(89, 89, 89);
   width: 81%;
 }
 
-main {
+.homebody main {
   margin-top: 4em;
   margin-right: -30px;
 }
 
-main a {
+.homebody main a {
   background-color: #364f6b;
   color: #f5f5f5;
-  display:flex;
+  display: flex;
   align-items: center;
   float: right;
   margin-top: 20px;
@@ -113,7 +113,7 @@ main a {
   border-bottom-left-radius: 5px;
 }
 
-main a img {
+.homebody main a img {
   float: left;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -121,12 +121,12 @@ main a img {
   transition: 0.5s;
 }
 
-main a:hover {
+.homebody main a:hover {
   margin-right: 20px;
   box-shadow: 5px 5px 5px rgb(89, 89, 89);
 }
 
-main a:hover img {
+.homebody main a:hover img {
   opacity: 1.0;
 }
 
@@ -138,6 +138,7 @@ main a:hover img {
   margin-right: 30px;
   transition: 0.5s;
 }
-main a:hover .articletext {
+
+.homebody main a:hover .articletext {
   opacity: 1;
 }
