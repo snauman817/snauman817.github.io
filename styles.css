@@ -142,3 +142,50 @@ header div {
 .homebody main a:hover .articletext {
   opacity: 1;
 }
+
+.aboutbody h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.aboutbody article {
+  background-color: #3fc1c9;
+  border: 1px dotted #364f6b;
+  border-radius: 5px;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 70%;
+}
+
+.aboutbody article p, li, a {
+  font-size: 15px;
+}
+
+.aboutbody article a {
+  color: #e9215e;
+}
+.aboutbody article a:hover {
+  color: #fc5185;
+}
+
+.aboutbody article:nth-of-type(odd) {
+  transform: skew(1deg, 1deg);
+}
+
+.aboutbody article:nth-of-type(odd) h2, .aboutbody article:nth-of-type(odd) p, .aboutbody article:nth-of-type(odd) ul {
+  transform: skew(-1deg, -1deg);
+}
+
+.aboutbody article:nth-of-type(even) {
+  transform: skew(-1deg, -1deg);
+}
+
+.aboutbody article:nth-of-type(even) h2, .aboutbody article:nth-of-type(even) p {
+  transform: skew(1deg, 1deg);
+}
+
+.aboutbody ul {
+  list-style-type: none;
+}
