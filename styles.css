@@ -159,7 +159,7 @@ header div {
   width: 70%;
 }
 
-.aboutbody article p, li, a {
+.aboutbody article p, .aboutbody article li, .aboutbody article a {
   font-size: 15px;
 }
 
@@ -188,4 +188,41 @@ header div {
 
 .aboutbody ul {
   list-style-type: none;
+}
+
+.projectsbody h1, .projectsbody h2 {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.projectsbody section {
+  background-color: #3fc1c9;
+  border: 1px dotted #364f6b;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+  width: 75%;
+}
+
+.projectsbody article {
+  border-bottom: 1px dotted #364f6b;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.projectsbody article.last-item {
+  border-bottom: 1px solid #3fc1c9;
+}
+
+.projectsbody article p, .projectsbody article a {
+  font-size: 15px;
+}
+
+.projectsbody h3 {
+  font-size: 20px;
+}
+
+.projectsbody h2 {
+  font-size: 25px;
 }
